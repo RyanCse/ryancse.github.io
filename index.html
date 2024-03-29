@@ -3,34 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的网站</title>
+    <title>首页 - 我的网站</title>
     <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0; }
-        header { background: #333; color: #fff; padding: 20px; text-align: center; }
-        nav ul { padding: 0; }
-        nav ul li { display: inline; margin: 0 10px; }
-        nav ul li a { color: #fff; text-decoration: none; }
-        main { padding: 20px; }
-        footer { background: #333; color: #fff; text-align: center; padding: 10px; position: fixed; bottom: 0; width: 100%; }
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-image: url('https://live.staticflickr.com/65535/53618285534_8b74a8d4aa_k.jpg');
+            background-size: cover;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            width: 80%;
+            max-width: 800px;
+        }
+        /* 以下是新增的CSS样式 */
+        .top-nav {
+            width: 100%;
+            background-color: #d0d0d4; /* 背景颜色 */
+            padding: 20px 0; /* 上下填充 */
+            text-align: center; /* 文本居中 */
+            position: fixed; /* 固定在顶部 */
+            top: 0; /* 顶部对齐 */
+            left: 0; /* 左侧对齐 */
+            z-index: 1000; /* 确保它在其他内容之上 */
+        }
+
+        .top-nav a {
+            margin: 100px; /* 链接之间的间隔 */
+            color: #ffffff; /* 链接颜色 */
+            text-decoration: none; /* 去除下划线 */
+            font-size: 25px; /* 字体大小 */
+            font-family:monospace
+        }
+        /* 其他已有的CSS样式 */
     </style>
 </head>
 <body>
-    <header>
-        <h1>欢迎来到我的网站</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">首页</a></li>
-            <li><a href="about.html">关于我们</a></li>
-            <li><a href="contact.html">联系方式</a></li>
-        </ul>
-    </nav>
-    <main>
-        <h2>网站介绍</h2>
-        <p>这是我的个人网站，我会在这里分享我的项目、博客和其他有趣的内容。</p>
-    </main>
-    <footer>
-        <p>&copy; 2024 我的网站. All rights reserved.</p>
-    </footer>
+    <!-- 顶部导航的HTML代码 -->
+    <div class="top-nav">
+        <a href="3d-modeling.html">3D建模仪</a>
+        <a href="ai-models.html">AI大模型</a>
+        <a href="custom-digital-humans.html">数字人定制</a>
+    </div>
+
+    <!-- 页面的其他内容 -->
+    <div class="container">
+        <header>
+            <h1>3D数字人制作</h1>
+            <h1>北京天翔睿翼科技有限公司</h1>
+            <h1>分钟级高精度建模<h1/>
+        </header>
+        <!-- 其他内容 -->
+    </div>
+    <!-- 页面的其他部分 -->
 </body>
 </html>
